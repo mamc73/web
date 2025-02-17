@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Innovación Empresarial</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #1a1a1a;
+            padding: 15px 0;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 10%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #00a8e8;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00a8e8;
+        }
+
+        /* Hero section */
+        #hero {
+            background: linear-gradient(120deg, #00a8e8, #1a1a1a);
+            color: white;
+            text-align: center;
+            padding: 100px 10%;
+        }
+
+        #hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        #hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #fff;
+            color: #00a8e8;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: #ddd;
+        }
+
+        /* Servicios */
+        #servicios {
+            background: white;
+            text-align: center;
+            padding: 50px 10%;
+        }
+
+        .servicios-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .servicio {
+            background: #f4f4f4;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .servicio:hover {
+            transform: scale(1.05);
+        }
+
+        /* Contacto */
+        #contacto {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 40px 10%;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Iconos flotantes de WhatsApp */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;  /* Tamaño del círculo */
+            height: 60px; /* Tamaño del círculo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Imagen del logo de WhatsApp */
+        .whatsapp-icon img {
+            width: 100%;  /* Ajusta la imagen al tamaño del círculo */
+            height: 100%; /* Ajusta la imagen al tamaño del círculo */
+            object-fit: cover; /* Asegura que la imagen mantenga la proporción dentro del círculo */
+        }
+
+        .whatsapp-icon:hover {
+            transform: scale(1.1); /* Agrega un efecto de hover */
+        }
+
+        /* Estilo para el segundo icono flotante de WhatsApp */
+        .whatsapp-icon-second {
+            bottom: 100px; /* Ajusta la posición para que no se superpongan */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">TechSolutions</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Innovación y Tecnología para Empresas</h1>
+        <p>Soluciones avanzadas en tecnología, administración, contabilidad y más.</p>
+        <a href="#contacto" class="cta-btn">Contáctanos</a>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <h3>Automatización Empresarial</h3>
+                <p>Optimizamos procesos con tecnología avanzada.</p>
+            </div>
+            <div class="servicio">
+                <h3>Gestión Contable</h3>
+                <p>Control financiero eficiente para tu empresa.</p>
+            </div>
+            <div class="servicio">
+                <h3>Consultoría Estratégica</h3>
+                <p>Soluciones personalizadas para cada negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Casos de Éxito</h2>
+        <p>Hemos ayudado a múltiples empresas a mejorar su eficiencia y productividad.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Email: contacto@techsolutions.com</p>
+        <p>Teléfono: 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechSolutions. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Icono flotante de WhatsApp con el primer número -->
+    <a href="https://wa.me/5218125946131" target="_blank" class="whatsapp-icon">
+        <img src="whatsapp-logo.png" alt="WhatsApp" />
+    </a>
+
+    <!-- Icono flotante de WhatsApp con el nuevo número -->
+    <a href="https://wa.me/528125040445" target="_blank" class="whatsapp-icon whatsapp-icon-second">
+        <img src="whatsapp-logo.png" alt="WhatsApp" />
+    </a>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            gsap.from("header", { opacity: 0, y: -50, duration: 1 });
+            gsap.from("#hero h1", { opacity: 0, y: 50, duration: 1, delay: 0.5 });
+            gsap.from("#hero p", { opacity: 0, y: 50, duration: 1, delay: 0.7 });
+            gsap.from(".cta-btn", { opacity: 0, scale: 0.8, duration: 1, delay: 1 });
+
+            gsap.from("#servicios h2", { opacity: 0, x: -50, duration: 1, delay: 1.2 });
+            gsap.from(".servicio", { opacity: 0, scale: 0.8, duration: 1, delay: 1.5, stagger: 0.3 });
+
+            gsap.from("#proyectos h2", { opacity: 0, y: 50, duration: 1, delay: 2 });
+            gsap.from("#contacto h2", { opacity: 0, y: 50, duration: 1, delay: 2.5 });
+        });
+    </script>
+</body>
+</html>
